@@ -58,17 +58,13 @@ button {
 .btn-light {
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-title-color);
   background-color: var(--accent-color);
-}
-
-.nav-menu .current {
-  color: var(--accent-color);
 }
 
 /*---------Header------------------- */
@@ -89,20 +85,27 @@ button {
   text-decoration: none;
 }
 
+.nav-menu .current {
+  color: var(--accent-color);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
+.header-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto 0 auto;
 }
-
-.header-container {
+.container {
   display: flex;
   align-items: center;
+}
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header-connect {
@@ -110,7 +113,15 @@ body {
 }
 
 .contact-menu {
+  margin-left: 50px;
+}
+
+.contact-menu {
   display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-menu {
@@ -165,6 +176,21 @@ body {
 }
 
 /* ---------------Hero--------------------*/
+
+.hero-container {
+  background-color: #2f303a;
+  display: flex;
+  margin: 0 auto;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.hero-after-title {
+  width: 696px;
+  height: 120px;
+  text-align: center;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -173,10 +199,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
-}
-
-.hero-title {
-  background-color: #2f303a;
 }
 
 .pre-title {
