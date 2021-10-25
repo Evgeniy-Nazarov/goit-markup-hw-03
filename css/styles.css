@@ -191,6 +191,7 @@ body {
 
 .hero-btn:focus,
 .hero-btn:hover {
+  cursor: pointer;
   color: var(--primary-title-color);
   background-color: var(--hero-btn-backgraund-active);
 }
