@@ -429,6 +429,10 @@ body {
   margin-right: -30px;
 }
 
+.menu-list {
+  cursor: pointer;
+}
+
 .menu-title {
   padding-left: 24px;
   padding-top: 20px;
