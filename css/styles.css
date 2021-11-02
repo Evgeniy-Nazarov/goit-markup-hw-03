@@ -62,8 +62,7 @@ body {
 
 /*---------Header------------------- */
 .header {
-  border-color: rgba(236, 236, 236, 1);
-  border-width: 1px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .container {
@@ -270,12 +269,12 @@ body {
 
 .gallery-list {
   display: flex;
+  margin-right: -30px;
 }
 
 .gallery-item {
   margin-right: 30px;
   align-items: center;
-  margin: 0 auto;
 }
 
 .gallery-item .gallery-item + .gallery-item {
@@ -426,7 +425,7 @@ body {
 
 /* ------------------main-menu---------------------------------- */
 .menu-button .btn-menu-portfolio + .btn-menu-portfolio {
-  margin-left: 30px;
+  margin-left: 8px;
 }
 
 .portfolio {
@@ -447,7 +446,6 @@ body {
 }
 
 .menu-list {
-  /* flex-basis: calc((100%-3 * 30px) / 3); */
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
@@ -455,10 +453,15 @@ body {
 
 .menu-list {
   cursor: pointer;
-  border-bottom: solid 1px;
-  border-color: rgba(238, 238, 238, 1);
   padding-top: 0px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
+}
+
+.menu-border {
+  padding: 20px 24px;
+  border-left: solid 1px rgba(236, 236, 236, 1);
+  border-right: solid 1px rgba(236, 236, 236, 1);
+  border-bottom: solid 1px rgba(236, 236, 236, 1);
 }
 
 .menu-list:not(:first-child) {
@@ -466,9 +469,6 @@ body {
 }
 
 .menu-title {
-  margin-left: 24px;
-  margin-top: 20px;
-  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -477,7 +477,7 @@ body {
 }
 
 .menu-subtitle {
-  margin-left: 24px;
+  margin-top: 4px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
